@@ -65,3 +65,12 @@ You do not need the macOS native backend and it [has known problems](https://git
 4. Run `make install` in that directory (on some versions of macOS this requires being root, the first time you run it, to install a new certificate)
 
 The makefile will take care of creating and installing a self-signed certificate automatically.
+Install the latest release:
+$ go install github.com/go-delve/delve/cmd/dlv@latest
+
+# Install from tree head:
+$ go install github.com/go-delve/delve/cmd/dlv@master
+
+# Install a specific version or pseudo-version:
+$ go install github.com/go-delve/delve/cmd/dlv@v1.7.3
+$ go install github.com/go-delve/delve/cmd/dlv@v1.7.4-0.20211208103735-2f13672765fe
